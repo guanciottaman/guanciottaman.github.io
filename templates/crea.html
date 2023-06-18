@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head title="Dashboard UpGamingBot">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Crea un nuovo torneo</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <h1>Nuovo torneo</h1>
+        </div>
+        <form class="torneo" method="POST" enctype=multipart/form-data>
+            <label for "nome">Nome torneo</label>
+            <br>
+            <input type="text" value="nome" placeholder="Inserisci il nome del torneo" name="nome" id="name">
+            <br><br>
+            <label for "partecipanti">Partecipanti massimi</label>
+            <br>
+            <input type="number" placeholder="Inserisci il numero massimo di partecipanti" name="partecipanti" id="partecipanti">
+            <br><br>
+            <label for "mappa">Mappa torneo</label>
+            <br>
+            <select id="mappa" name="mappa">
+                <option>Ashika Island</option>
+                <option>Al Mazrah</option>
+            </select>
+            <br><br>
+            <label for "mode">Modalità torneo</label>
+            <br>
+            <select id="mode" name="mode">
+                <option>Solos</option>
+                <option>Duos</option>
+                <option>Trios</option>
+                <option>Quads</option>
+            </select>
+            <br><br>
+            <label for "data">Data torneo</label>
+            <br>
+            <input type="datetime-local" id="data" name="data">
+            <label for "lobby">Lobby</label>
+            <br>
+            <select name="lobby" id="lobby" aria-label="Seleziona la lobby">
+                <option>Privata</option>
+                <option>Pubblica</option>
+            </select>
+            <br><br>
+            <label for "modef">Custom/Killrace</label>
+            <br>
+            <select name="modef" id="modef">
+                <option>Custom</option>
+                <option>Killrace</option>
+            </select>
+            <br><br>
+            <label for "iscrizione">Prezzo iscrizione</label>
+            <br>
+            <input type="number" name="iscrizione" id="iscrizione" placeholder="Inserisci il prezzo dell'iscrizione">
+            <br><br>
+            <label for "matches">Partite totali</label>
+            <br>
+            <input type="number" name="matches" id="matches" placeholder="Inserisci il numero delle partite totali">
+            <br><br>
+            <label for "topmatches">Top matches</label>
+            <br>
+            <input type="number" name="topmatches" id="topmatches" placeholder="Inserisci il numero di match che verranno considerati">
+            <br><br>
+            <label for "kdlimit">Limite KD</label>
+            <br>
+            <input type="number" name="kdlimit" id="kdlimit" placeholder="Inserisci il rapporto massimo tra kill e morti">
+            <br><br>
+            <label for "crossplay">Crossplay</label>
+            <br>
+            <select name="crossplay" id="crossplay">
+                <option>Attivato</option>
+                <option>Disattivato</option>
+            </select>
+            <br><br>
+            <label for "idrule">ID canale regolamento</label>
+            <br>
+            <input type="number" name="idrule" id="idrule" placeholder="Inserisci l'id del canale del regolamento">
+            <br><br>
+            <label for "team_lenght">Grandezza team</label>
+            <br>
+            <input type="number" name="team_lenght" id="team_lenght" placeholder="Inserisci quanto deve essere grande ogni team (1-4)">
+            <br><br>
+            <label for "iscrizionitermt">Termine iscrizioni</label>
+            <br>
+            <input type="datetime-local" name="iscrizionitermt" id="iscrizionitermt">
+            <br><br>
+            <label for="platforms">Piattaforme</label>
+            <br><br>
+            <label class="checklabel">
+                <input type="checkbox" name="platforms" id="platform-ps" value="Playstation">Playstation
+            </label>
+            <label class="checklabel">
+                <input type="checkbox" name="platforms" id="platform-pc" value="Pc">Pc
+            </label>
+            <label class="checklabel">
+                <input type="checkbox" name="platforms" id="platform-xbox" value="Xbox">Xbox
+            </label>
+            <br><br>
+            <label for "Immagine torneo" class="custom-file-upload">
+                Immagine torneo<input type="file" name="image" id="image">
+            </label>
+            <br>
+            <br><br>
+            <input type="submit" value="Crea torneo" class="button">
+            {% if error %}
+            <h2>{{ error }}</h2>
+            {% endif %}
+        </form>
+    </body>
+</html>

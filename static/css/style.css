@@ -1,0 +1,144 @@
+
+
+body {
+    background-color: rgb(53, 53, 215);
+    margin: 0;
+}
+
+h1 {
+    font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+    font-weight: 800;
+    padding: 10px;
+    color: rgb(140, 140, 211);
+    margin: 10px;
+    cursor: text;
+}
+
+label {
+    padding: 10px 10px;
+    font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+    font-weight: 600;
+    padding-top: 10px;
+    cursor: text;
+}
+
+::selection {
+    background: rgb(213, 11, 11);
+    color:rgb(28, 28, 48)
+}
+
+input {
+    padding: 10px;
+    width: 350px;
+    margin: 10px;
+    border-radius: 10px;
+    border-color: whitesmoke;
+    cursor: text;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    padding: 0;
+    vertical-align: middle;
+    margin-right: 5px;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+input[type="checkbox"]:checked {
+    background-color:rgb(28, 28, 48);
+}
+
+select, option {
+    padding: 10px;
+    width: 375px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+option {
+    background-color: rgb(140, 140, 211);
+}
+
+p {
+    font-size: 20px;
+    font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+    color:rgb(28, 28, 48);
+    margin: 10px;
+    cursor: text;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+    color:rgb(28, 28, 48);
+    margin: 10px;
+    font-weight: 500;
+    background: goldenrod;
+    cursor: text;
+}
+
+strong {
+    font-weight: 900;
+}
+
+.image_result {
+    max-height: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .responsive-image {
+      max-width: 400;
+      max-height: 350;
+    }
+}
+
+.main_div {
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    cursor: pointer;
+    color:black;
+    background-color: rgb(31, 31, 129);
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    width:200px;
+    height: 60px;
+    justify-self: right;
+}
+
+.button:hover {
+    background-color: navy;
+    cursor: pointer;
+}
+
+.navbar {
+    background-color:rgb(11, 7, 40);
+    display: flex;
+    font-size: 18px;
+    height: 80px;
+    padding: 0;
+}
+
+.torneo {
+    box-sizing: border-box;
+    width: 500px;
+    height: 40px;
+    padding: 20px;
+}
+
+.checklabel {
+    display: inline-flex;
+    align-items: center;
+}
