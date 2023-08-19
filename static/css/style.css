@@ -73,6 +73,15 @@ nav li {
     margin-top: 45px;
 }
 
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 14vh;
+    font-size: 24px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+}
 
 .social {
     text-decoration: none;
@@ -97,7 +106,7 @@ nav li {
     background-color: rgb(60, 90, 120);
     margin: 0;
     padding: 0;
-    height: 16vh;
+    height: 20vh;
 }
 
 .presentation.skills.libs h2{
@@ -108,6 +117,7 @@ nav li {
 .presentation.skills.others h2, img{
     margin-top: 20px;
     margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .presentation h2 {
@@ -135,13 +145,14 @@ nav li {
     align-items: center;
     justify-content: center;
     background-color: rgb(255, 208, 0);
-    height: 40vh;
-}
-
-.projects {
-    display: flex;
+    height: 120vh;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.project-container {
+    display: flex;
+    overflow-x: auto;
 }
 
 .project-card {
@@ -155,8 +166,46 @@ nav li {
     text-align: center;
 }
 
+.project-link {
+    display: inline-block;
+    background-color: #333;
+    border-radius: 20px;
+    padding: 2px 15px;
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.github-logo {
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    line-height: normal;
+    max-width: 100%;
+}
+
 .project-card a {
     text-decoration: none;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+}
+
+.project-card a:hover {
+    color: rgb(208, 181, 27)
+}
+
+.project-card h3 {
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+.project-card p {
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
 }
 
 .project-image {
