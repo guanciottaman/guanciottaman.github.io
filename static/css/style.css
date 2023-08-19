@@ -32,6 +32,9 @@ h2 {
 }
 
 nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
     display: flex;
     background-color: aliceblue;
     margin: 0;
@@ -84,7 +87,7 @@ nav li {
     background-color: dodgerblue;
     margin: 0;
     padding: 0;
-    /*height: 15vh;*/
+    height: 15vh;
 }
 
 .presentation.skills {
@@ -94,11 +97,17 @@ nav li {
     background-color: rgb(60, 90, 120);
     margin: 0;
     padding: 0;
-    height: 15vh;
+    height: 16vh;
 }
 
 .presentation.skills.libs h2{
     margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.presentation.skills.others h2, img{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .presentation h2 {
@@ -119,4 +128,38 @@ nav li {
     font-weight: 700;
     color: aliceblue;
     margin-top: 60px;
+}
+
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 208, 0);
+    height: 40vh;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-card {
+    width: calc(33.33% - 40px); /* Adjust as needed for spacing */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+}
+
+.project-card a {
+    text-decoration: none;
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
 }
