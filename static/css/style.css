@@ -56,7 +56,6 @@ nav a:hover {
     color: rgb(208, 181, 27);
 }
 
-/* Stilizzazione per l'elemento attivo */
 nav .active {
     color: rgb(208, 181, 27);
     border-bottom: 2px solid rgb(208, 181, 27);
@@ -71,6 +70,13 @@ nav li {
     margin-top: 45px;
 }
 
+
+.social {
+    text-decoration: none;
+    margin-left:30px;
+    margin-top: 45px;
+}
+
 .presentation {
     display: flex;
     justify-content: center;
@@ -78,7 +84,21 @@ nav li {
     background-color: dodgerblue;
     margin: 0;
     padding: 0;
-    height: 30vh;
+    /*height: 15vh;*/
+}
+
+.presentation.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(13, 57, 101);
+    margin: 0;
+    padding: 0;
+    height: 15vh;
+}
+
+.presentation.skills.libs h2{
+    margin-top: 20px;
 }
 
 .presentation h2 {
@@ -91,4 +111,12 @@ nav li {
     font-weight: 700;
     color: aliceblue;
     margin: 60px;
+}
+
+.section-title-sub {
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    color: aliceblue;
+    margin-top: 60px;
 }
