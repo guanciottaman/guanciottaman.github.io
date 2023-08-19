@@ -164,8 +164,10 @@ footer {
 }
 
 .project-card:hover {
+    z-index: 1;
     height: auto;
-    transition: height 4s;
+    transform: scale(1.05); /* Optional: Add a slight scale effect */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .hover-link {
@@ -241,18 +243,39 @@ footer {
     margin-top: 15px;
 }
 
+
 .contact {
     background-color: aliceblue;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 800px;
-    max-height: 500px;
-    margin: 20px auto;
+    max-width: 600px;
+    margin: 0 auto;
     padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styling for the form elements */
+.contact-container form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-container label,
+.contact-container input,
+.contact-container textarea,
+.contact-container button {
+    margin-bottom: 15px;
 }
 
 label {
@@ -273,12 +296,17 @@ input {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-input:focus, textarea:focus {
+input:focus {
     outline: none;
+    z-index: 1;
+    height: auto;
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 textarea {
     width: 500px;
+    height: 160px;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -286,6 +314,14 @@ textarea {
     font-size: 16px;
     font-weight: 500;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+    z-index: 1;
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 button {
@@ -293,12 +329,18 @@ button {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 10px;
     font-size: 14px;
-    background-color: rgb(30, 71, 235);
-    color: black;
+    background-color: rgb(62, 87, 190);
+    color: white;
     font-size: 18px;
     font-weight: 600;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     cursor: pointer;
+}
+
+button:hover {
+    z-index: 1;
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
