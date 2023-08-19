@@ -1,144 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+html {
+    margin: 0;
+    padding: 0;
+}
 
 body {
-    background-color: rgb(53, 53, 215);
-    margin: 0;
-}
-
-h1 {
-    font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
-    font-weight: 800;
-    padding: 10px;
-    color: rgb(140, 140, 211);
-    margin: 10px;
-    cursor: text;
-}
-
-label {
-    padding: 10px 10px;
-    font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
-    font-weight: 600;
-    padding-top: 10px;
-    cursor: text;
-}
-
-::selection {
-    background: rgb(213, 11, 11);
-    color:rgb(28, 28, 48)
-}
-
-input {
-    padding: 10px;
-    width: 350px;
-    margin: 10px;
-    border-radius: 10px;
-    border-color: whitesmoke;
-    cursor: text;
-}
-
-input[type="checkbox"] {
-    cursor: pointer;
-    padding: 0;
-    vertical-align: middle;
-    margin-right: 5px;
-    display: flex;
-    width: 30px;
-    height: 30px;
-    margin: 10px;
-}
-
-input[type="checkbox"]:checked {
-    background-color:rgb(28, 28, 48);
-}
-
-select, option {
-    padding: 10px;
-    width: 375px;
-    height: 40px;
-    margin: 10px;
-    border-radius: 10px;
-    overflow: auto;
-}
-
-option {
-    background-color: rgb(140, 140, 211);
-}
-
-p {
-    font-size: 20px;
-    font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
-    color:rgb(28, 28, 48);
-    margin: 10px;
-    cursor: text;
-}
-
-h3 {
-    font-size: 20px;
-    font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
-    color:rgb(28, 28, 48);
-    margin: 10px;
-    font-weight: 500;
-    background: goldenrod;
-    cursor: text;
-}
-
-strong {
-    font-weight: 900;
-}
-
-.image_result {
-    max-height: 100%;
-    height: auto;
-}
-
-@media only screen and (max-width: 768px) {
-    .responsive-image {
-      max-width: 400;
-      max-height: 350;
-    }
-}
-
-.main_div {
-    background-color: aqua;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.button {
-    cursor: pointer;
-    color:black;
-    background-color: rgb(31, 31, 129);
-    border-radius: 20px;
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 24px;
-    width:200px;
-    height: 60px;
-    justify-self: right;
-}
-
-.button:hover {
     background-color: navy;
-    cursor: pointer;
-}
-
-.navbar {
-    background-color:rgb(11, 7, 40);
-    display: flex;
-    font-size: 18px;
-    height: 80px;
+    margin: 0;
     padding: 0;
 }
 
-.torneo {
-    box-sizing: border-box;
-    width: 500px;
-    height: 40px;
-    padding: 20px;
+nav h1 {
+    font-size: 48px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 1000;
+    color: rgb(62, 87, 190);
+    margin: 30px;
 }
 
-.checklabel {
-    display: inline-flex;
+h2 {
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    color: aliceblue;
+    margin: 30px;
+}
+
+nav {
+    display: flex;
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(30, 71, 235);
+}
+
+nav a:hover {
+    color: rgb(208, 181, 27);
+}
+
+/* Stilizzazione per l'elemento attivo */
+nav .active {
+    color: rgb(208, 181, 27);
+    border-bottom: 2px solid rgb(208, 181, 27);
+}
+
+nav li {
+    text-decoration: none;
+    font-size: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-top: 45px;
+}
+
+.presentation {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    background-color: dodgerblue;
+    margin: 0;
+    padding: 0;
+    height: 30vh;
+}
+
+.presentation h2 {
+    display: block;
+}
+
+.section-title {
+    font-size: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    color: aliceblue;
+    margin: 60px;
 }
