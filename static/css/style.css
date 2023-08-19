@@ -240,3 +240,10 @@ footer {
     height: auto;
     margin-top: 15px;
 }
+
+.contact {
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
