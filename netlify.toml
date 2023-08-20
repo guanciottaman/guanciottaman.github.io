@@ -1,0 +1,5 @@
+
+
+[[edge_functions]]
+function = "latest_articles_a_b"
+path = "/blog"
