@@ -57,7 +57,7 @@
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
-            <ul>
+            <ul class="show">
                 <li><a href="#presentation">Presentation</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -73,7 +73,7 @@
                     </a>
                 </li>
                 <li class="social">
-                    <a href="https://fiverr.com/user/guanciottaman" target="_blank" rel="noopener">
+                    <a href="https://fiverr.com/guanciottaman" target="_blank" rel="noopener">
                         <img src="static/images/fiverr.png" alt="fiverr-logo" width="50" height="50">
                     </a>
                 </li>
@@ -173,7 +173,7 @@
             </div>
             <div class="experience freelance">
                 <h3>Freelancing</h3>
-                <a href="https://fiverr.com/user/guanciottaman" target="_blank" rel="noopener">
+                <a href="https://fiverr.com/guanciottaman" target="_blank" rel="noopener">
                     <img src="static/images/freelance.png" alt="Freelancing" width="400" height="300">
                 </a>
                 <p>I started freelancing in 2022 mostly making custom Discord bots for people.<br>
@@ -184,7 +184,7 @@
         <div class="contact" id="contact">
             <div class="contact-container">
                 <h2 class="section-title" style="color: black">Contact me</h2>
-                <form id="contact-form" name="Contact Form" method="post" netlify>
+                <form id="contact-form" name="Contact Form" method="post" data-netlify="true" netlify>
                     <label for="name">Your name</label>
                     <input type="text" name="name" id="name" placeholder="Your name here..." autocomplete="name">
                     <label for="email">Your email</label>
@@ -200,5 +200,12 @@
         <footer>
             <h3>Hope you liked this!</h3>
         </footer>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                document.querySelector('.hamburger').addEventListener('click', function() {
+                    document.querySelector('nav ul').classList.toggle('show');
+                });
+            });
+        </script>
     </body>
 </html>
