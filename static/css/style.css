@@ -1,3 +1,30 @@
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center; /* Center align text */
+        padding: 10px; /* Add padding for better spacing */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack menu items vertically */
+        margin: 0;
+        display: none;
+    }
+
+    .hamburger {
+        display: flex; /* Show the hamburger icon */
+    }
+
+    nav h1 {
+        font-size: 32px; /* Adjust font size */
+        margin: 0; /* Remove margin */
+    }
+
+    nav li {
+        margin-top: 10px; /* Add space between menu items */
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,19 +43,19 @@ body {
 }
 
 nav h1 {
-    font-size: 48px;
+    font-size: 3rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 1000;
     color: rgb(62, 87, 190);
-    margin: 30px;
+    margin: 1.5rem;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 700;
     color: aliceblue;
-    margin: 30px;
+    margin: 1.5rem;
 }
 
 nav {
@@ -54,6 +81,28 @@ nav a {
     text-decoration: none;
     color: rgb(30, 71, 235);
 }
+
+
+button {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    background-color: rgb(62, 87, 190);
+    color: white;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+
+button:hover {
+    z-index: 1;
+    transform: scale(1.05);
+    box-shadow: 0px 0.5rem 0.625rem rgba(0, 0, 0, 0.2);
+}
+
 
 nav a:hover {
     color: rgb(208, 181, 27);
@@ -161,15 +210,15 @@ footer {
 }
 
 .project-card {
-    width: calc(33.33% - 40px); /* Adjust as needed for spacing */
+    width: calc(33.33% - 2.5rem); /* Adjust as needed for spacing */
     border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 2rem;
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
     background-color: #fff;
     text-align: center;
-    height: 420px;
+    height: 26rem;
     overflow: hidden;
     transition: height 4s;
 }
@@ -342,23 +391,23 @@ footer {
 .contact-container input,
 .contact-container textarea,
 .contact-container button {
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
 }
 
 label {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 input {
-    width: 500px;
-    height: 50px;
-    padding: 10px;
-    margin-bottom: 10px;
+    width: 31.25rem;
+    height: 5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
     border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 16px;
+    border-radius: 0.1875rem;
+    font-size: 1rem;
     font-weight: 500;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -372,17 +421,18 @@ input:focus {
 }
 
 textarea {
-    width: 500px;
-    height: 160px;
-    padding: 10px;
-    margin-bottom: 10px;
+    width: 31.25rem;
+    height: 10rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
     border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 16px;
+    border-radius: 0.1875rem;
+    font-size: 1rem;
     font-weight: 500;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     resize: none;
 }
+
 
 textarea:focus {
     outline: none;
@@ -391,24 +441,16 @@ textarea:focus {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-button {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    font-size: 14px;
-    background-color: rgb(62, 87, 190);
-    color: white;
-    font-size: 18px;
-    font-weight: 600;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.hamburger {
+    display: none; /* Hide the hamburger icon by default */
+    flex-direction: column;
     cursor: pointer;
+    margin-right: 20px; /* Add spacing from the right */
 }
 
-button:hover {
-    z-index: 1;
-    transform: scale(1.05);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: aliceblue;
+    margin: 3px 0;
 }
-
