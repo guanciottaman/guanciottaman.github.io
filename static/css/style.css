@@ -23,6 +23,19 @@
     nav li {
         margin-top: 10px; /* Add space between menu items */
     }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: white;
+    }
 }
 
 * {
@@ -442,10 +455,18 @@ textarea:focus {
 }
 
 .hamburger {
-    display: none; /* Hide the hamburger icon by default */
-    flex-direction: column;
-    cursor: pointer;
-    margin-right: 20px; /* Add spacing from the right */
+    display: none; /* Initially hide the hamburger icon on larger screens */
+    /* Add other styles for positioning and appearance */
+}
+
+/* Styles for the navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    /* Add other styles for positioning and appearance */
 }
 
 .line {
